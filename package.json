@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./public/tailwind.css -o ./src/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.6"
+  }
+}

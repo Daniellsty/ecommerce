@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  </head>
+  <body>
+
+    <div class="container-main w-full px-[10%] ">
+
+        <header>
+            <div class="header-top flex flex-row justify-between">
+                <div class="header-top-left flex items-center">
+                    <small class="mx-2 cursor-pointer">blog</small>
+                    <small class="mx-2 cursor-pointer">Featured Products</small>
+                    <small class="mx-2 cursor-pointer">Whishlist</small>
+                </div>
+                <div class="header-top-right flex items-center ">
+                    <small class="mx-2 cursor-pointer">sign up</small>
+                    <small class="mx-2 cursor-pointer">My Account</small>
+                    <small class="mx-2 cursor-pointer">Order Tracking</small>
+                    <small class="mx-2 cursor-pointer relative group w-10 h-10 flex items-center">USD  
+                       <i class="fa-solid fa-angle-down"></i>
+                       <div class="flex flex-col justify-between absolute invisible group-hover:visible top-10 bg-white opacity-100 border w-16 h-24 text-center z-10">
+                         <small class="bg-slate-200">USD</small>
+                         <small>EURO</small>
+                         <small>GBRP</small>
+                         <small>IDR</small>
+                       </div>
+                    </small>
+                    <small class="mx-2 cursor-pointer group w-10 h-10 flex items-center">English
+                       <i class="fa-solid fa-angle-down mx-1"></i>
+                       <div class="flex flex-col justify-between absolute invisible group-hover:visible top-10 bg-white opacity-100 border w-16 h-24 text-center z-10">
+                        <small class="bg-slate-200">English</small>
+                        <small>German</small>
+                        <small>Spanish</small>
+                        <small>Russia</small>
+                      </div>
+                    </small>
+                </div>
+            </div>
+            <div class="header-middle flex justify-between mt-10">
+                <div class="header-middle-left flex items-center justify-center">
+                    <h1 class="mx-2 font-bold text-3xl relative">.store
+                        <div class="w-7 h-7 bg-purple-300 rounded-full absolute top-[-5px] left-[-20px] shadow shadow-[60px 35px 60px 15px ] shadow-slate-500"></div>
+                    </h1>
+                    <span class="mx-2 cursor-pointer">Home</span>
+                    <span class="mx-2 cursor-pointer">shop</span>
+                    <span class="mx-4 cursor-pointer w-10 h-16 flex items-center justify-center group  ">women
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="flex justify-between absolute invisible group-hover:visible  w-screen  top-[130px] right-0 bg-slate-200 z-10 overflow-hidden px-[10%] py-[40px] shadow-xl">
+                        <div class="woman-products flex gap-20 justify-between w-1/2">
+                            <div class="1 ">
+                                <h1 class="font-bold uppercase hover:text-gray-400">womens clothing</h1>
+                                <h1 class="capitalize hover:text-gray-400">dresses</h1>
+                                <h1 class="capitalize hover:text-gray-400">tops & tess</h1>
+                                <h1 class="capitalize hover:text-gray-400">jackets & coats</h1>
+                                <h1 class="capitalize hover:text-gray-400">pants & capris</h1>
+                                <h1 class="capitalize hover:text-gray-400">swearts</h1>
+                                <h1 class="capitalize hover:text-gray-400">costumes</h1>
+                                <h1 class="capitalize hover:text-gray-400">hoodies & sweatshirts</h1>
+                                <h1 class="capitalize hover:text-gray-400">pajamas & robes</h1>
+                                <h1 class="capitalize hover:text-gray-400">shorts</h1>
+                                <h1 class="capitalize hover:text-gray-400">swimwear</h1>
+                            </div>
+                            <div class="2">
+                                <h1 class="font-bold uppercase hover:text-gray-400">jewelry</h1>
+                                <h1 class="capitalize hover:text-gray-400">accessories</h1>
+                                <h1 class="capitalize hover:text-gray-400">bags & purses</h1>
+                                <h1 class="capitalize hover:text-gray-400">necklaces</h1>
+                                <h1 class="capitalize hover:text-gray-400">rings</h1>
+                                <h1 class="capitalize hover:text-gray-400">swearts</h1>
+                                <h1 class="capitalize hover:text-gray-400">earrings</h1>
+                                <h1 class="capitalize hover:text-gray-400">bracelets</h1>
+                                <h1 class="capitalize hover:text-gray-400">body jewelry</h1>
+                            </div>
+                            <div class="3">
+                                <h1 class="font-bold uppercase hover:text-gray-400">beauty</h1>
+                                <h1 class="capitalize hover:text-gray-400">bath accessories</h1>
+                                <h1 class="capitalize hover:text-gray-400">makeup & cosmetics</h1>
+                                <h1 class="capitalize hover:text-gray-400">skin care</h1>
+                                <h1 class="capitalize hover:text-gray-400">hair care</h1>
+                                <h1 class="capitalize hover:text-gray-400">essential oils</h1>
+                                <h1 class="capitalize hover:text-gray-400">fragrances</h1>
+                                <h1 class="capitalize hover:text-gray-400">soap & bath bombs</h1>
+                                <h1 class="capitalize hover:text-gray-400">face masks & covering</h1>
+                                <h1 class="capitalize hover:text-gray-400">spa kits & gifts</h1>
+                            </div>
+                            <div class="4">
+                                <h1 class="font-bold uppercase hover:text-gray-400">top brands</h1>
+                                <h1 class="capitalize hover:text-gray-400">nike  louis &emsp;  vuitton</h1>
+                                <h1 class="capitalize hover:text-gray-400">hermes &emsp; gucci</h1>
+                                <h1 class="capitalize hover:text-gray-400">zalando &emsp; tiffany & co. </h1>
+                                <h1 class="capitalize hover:text-gray-400">zara  &emsp; h&m</h1>
+                                <h1 class="capitalize hover:text-gray-400">cartier &emsp; chanel</h1>
+                                <h1 class="capitalize hover:text-gray-400">hurley</h1>
+                                <h1 class="capitalize hover:text-gray-400">view all brands <i class="fa-solid fa-arrow-right"></i></h1>
+                            </div>
+                       
+                        </div>
+
+                       <div class="mb-[20px] w-[270px] h-[300px]  relative overflow-hidden">
+                        <div class="img w-full relative w-full h-full pb-[20px]  ">
+                            <img src="./assets/products/apparel4.jpg " class=" bg-cover bg-center transition hover:scale-110 duration-500 " alt="">
+                        </div>
+                        <div class="pic-details flex flex-col justify-end   absolute top-[70%] mx-[10%] ">
+                            <h1 class="font-bold text-2xl uppercase ">most wandted!</h1>
+                            <button class="bg-red-400 w-24 h-10 text-center m-auto rounded-full text-white hover:bg-black">order now</button>
+                        </div>
+                    </div>
+                    </div>
+                       
+                    
+                    </span>
+                    <span class="mx-2 cursor-pointer">Men</span>
+                    <span class="mx-2 relative cursor-pointer">sports
+                       <div class="w-8 h-5 bg-red-300 text-xs absolute top-[-10px] left-[50px] text-white rounded-[4px] text-center">news</div>
+                    </span>
+                </div>
+                <div class="header-middle-right flex items-center">
+
+                    <div class="like relative mx-2">
+                        <i class="fa-regular fa-heart cursor-pointer">
+                            <div class="absolute top-[-9px] left-[10px] bg-black rounded-full w-4 h-4 text-white leading-4 text-[10px] text-center">0</div>
+                        </i>
+                    </div>
+                    <div class="shop relative mx-2">
+                        <i class=" fa-sharp fa-solid fa-cart-shopping cursor-pointer "></i>
+                            <div class="absolute top-[-9px] left-[10px] bg-black rounded-full w-4 h-4 text-white leading-4 text-xs text-center">0</div>
+                        </i>
+                    </div>
+                    <div class="total flex flex-col mx-2">
+                        <small class=" text-gray-400">Total</small>
+                        <span class="font-bold">$0.00</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="header-bottom w-full h-36 bg-slate-600 relative left-0  mt-5 flex justify-between items-center px-[10%]">
+               <div >
+                <div class="header-bottom-left flex flex-col text-white bg-red-400 p-5 w-[279px] rounded-tl-[5px] rounded-tr-[5px] absolute bottom-[0px]">
+                    <h1>All Departments
+                    </h1>
+                    <small class="capitalize">total 1059 Products</small>  
+                </div>
+               </div>
+                <div class="header-bottom-right bg-white px-[25%] h-[50px] flex  relative rounded-lg ">
+                    <div class="absolute left-5 h-[50px]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="search for Products " class="border-none bg-transparent h-full  mr-5 outline-none">
+                        
+                    </div>
+                    <button class="bg-red-400 absolute right-0 text-white h-full leading-[50px] px-5 rounded-tr-lg rounded-br-lg hover:bg-black">search</button>
+                </div>
+            </div>
+        </header>
+        <main class="main px-[10%]">
+            <div class="main-top  flex justify-between">
+                <div class="main-top-left border  w-[279px] h-[460px]">
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-brands fa-discord "> </i>
+                            <h1 class="mx-2m relative ">beauty </h1>
+                        </div>
+                        <div class="right">
+                            <i class="fa-solid fa-chevron-right group">
+
+                                <div class="beauty-details invisible group-hover:visible w-[279px] h-[460px] absolute z-10 font-serif">
+                                    <div class="flex flex-col   bg-[url('./assets/menu/menu_bg1.jpg')] w-full h-full  top-[-30px] left-[50px] absolute z-100  before:content('')  before:w-1/2 before:h-full before:bg-white before:absolute before:filter before:blur-3xl before:top-[50px] before:opacity-100">
+                                        <div class=" mt-5 p-2 ml-5 z-10 capitalize">
+                                        <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline">makeup</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">skin care</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">hair care</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">fragnece</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">foot & hand care</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">tools & accessories</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">shave & hair removal</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">personal care</h1>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-brands fa-bluetooth-b"></i>
+                            <h1 class="mx-2">Electronic</h1>
+                        </div>
+                        <div class="right">
+                            <i class="fa-solid fa-chevron-right group">
+                                <div class="beauty-details invisible group-hover:visible w-[279px] h-[460px] absolute z-10 font-serif">
+                                    <div class="flex flex-col   bg-[url('./assets/menu/menu_bg2.jpg')] w-full h-full  top-[-71px] left-[50px] absolute z-100  before:content('')  before:w-1/2 before:h-full before:bg-white before:absolute before:filter before:blur-3xl before:top-[50px] before:opacity-100">
+                                        <div class=" mt-5 p-2 ml-5 z-10 capitalize">
+                                        <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline">camera</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">cell phones</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">computers</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">GPS & navigation</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">headedphones</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">home audio</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">television</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">video projectors</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">wearable technology</h1>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </i>
+                        </div>
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-sharp fa-solid fa-person-half-dress"> </i>
+                            <h1 class="mx-2">Womain s fashion</h1>
+                        </div>
+                        <div class="right">
+                            <i class="fa-solid fa-chevron-right group">
+
+                                <div class="beauty-details invisible group-hover:visible w-[279px] h-[460px] absolute z-10 font-serif">
+                                    <div class="flex flex-col   bg-[url('./assets/menu/menu_bg3.jpg')] w-full h-full  top-[-113px] left-[50px] absolute z-100  before:content('')  before:w-3/4 before:h-full before:bg-white before:absolute before:filter before:blur-3xl before:top-[50px] before:left-[-30px] before:opacity-15">
+                                        <div class=" mt-5 p-2 ml-5 z-10 capitalize">
+                                        <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline">clothing</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">shoes</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">jewelry</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">watches</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">handbags</h1>
+                                        <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">accessories</h1>
+                                        
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-sharp fa-solid fa-user-tie"></i>
+                            <h1 class="mx-2">men s Fashion</h1>
+                        </div>
+                       
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-sharp fa-solid fa-child-dress"></i>
+                            <h1 class="mx-2">girl s fashion</h1>
+                        </div>
+                       
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-solid fa-child-reaching"></i>
+                            <h1 class="mx-2">Boy s Fashion</h1>
+                        </div>
+                      
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <h1 class="mx-2">Health & Household</h1>
+                        </div>
+                       
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <h1 class="mx-2">Home & kitchen</h1>
+                        </div>
+                        <div class="right">
+                            <i class="fa-solid fa-chevron-right group">
+
+
+                                <div class="beauty-details invisible group-hover:visible w-[55%] h-[460px] absolute z-10 font-serif">
+                                    <div class="flex flex-col   bg-[url('./assets/menu/menu_bg4.jpg')] bg-left-top  bg-cover w-full h-full  top-[-322px] left-[50px] absolute z-100  before:content('')  before:w-3/4 before:h-full before:bg-white before:absolute before:filter before:blur-3xl before:top-[50px] before:left-[-30px] before:opacity-15">
+                                        <div class="flex px-5 mt-5 p-2 ml-5 z-10 capitalize">
+
+                                        <div class="mx-10">
+
+                                            <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline text-xl">kitchen & dining</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">kitchen</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">dinig room</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">pantry</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">great room</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">breakfast nook</h1>
+                                            <h1 class="font-bold z-10 my-6 hover:text-blue-800 hover:underline">living</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">living room</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">family room</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">sunroom</h1>
+                                            
+                                        </div>
+
+                                        <div class="mx-10">
+
+                                            <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline text-xl">bed & bath</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">bathroom</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">powder room</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">bedroom</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">storage & closet</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">bady & kids</h1>
+                                            <h1 class="font-bold z-10 my-6 hover:text-blue-800 hover:underline">utility</h1>
+                                            <h1 class="font-bold z-10 my-6 hover:text-blue-800 hover:underline">laundry</h1>
+                                            <h1 class="font-bold z-10 my-6 hover:text-blue-800 hover:underline">garage</h1>
+                                            <h1 class="font-bold z-10 my-6 hover:text-blue-800 hover:underline">mundroom</h1>
+                                            
+                                        </div>
+
+                                        <div class="mx-10">
+
+                                            <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline text-xl">outdoor</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">landscape</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">patio</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">deck</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">pool</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">backyard</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">perch</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">exterior</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">outdoor kitchen</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">front yard</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">driveway</h1>
+                                            <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">poolhouse</h1>
+                                            
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-sharp fa-solid fa-glass-water-droplet"></i>
+                            <h1 class="mx-2">Pet Supplles</h1>
+                        </div>
+                      
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-solid fa-volleyball"></i>
+                            <h1 class="mx-2">Sports</h1>
+                        </div>
+                       
+                    </div>
+                    <div class="1 flex justify-between items-center border py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-brands fa-buysellads"></i>
+                            <h1 class="mx-2">Best Seller</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper main-top-right slide h-[420px]  absolute right-0  px-[10%]  mt-10">
+                  <div class=" swiper-wrapper relative w-full h-full ">
+                   <div class="swiper-slide before:content('') before:top-[10%] before:left-[5%] before:w-[500px] before:h-[340px] before:bg-white before:absolute before:filter before:blur-3xl before:opacity-90">
+                    <img src="./assets/slider/slider0.jpg" alt="" class="w-full h-full  bg-center bg-auto bg-origin-content bg-clip-content ">
+                    <div class="item   items-center absolute left-16 top-[30%]">
+                        <button class="bg-black text-white px-3  py-1 rounded-[0.5em] text-[10px] font-bold my-2">shoes fashion</button>
+                        <h1 class="text-gray-400 text-4xl my-2">Come and Get it !</h1>
+                        <h1 class="uppercase font-bold text-3xl my-2">brand new shoes</h1>
+                        <button class="bg-red-400 text-white p-2 rounded-full">shop new</button>
+                    </div>
+                    
+                   </div>
+                   <div class="swiper-slide before:content('') before:top-[10%] before:left-[5%] before:w-[500px] before:h-[340px] before:bg-white before:absolute before:filter before:blur-3xl before:opacity-90">
+                    <img src="./assets/slider/slider1.jpg" alt="" class="w-full h-full  bg-center bg-auto bg-origin-content bg-clip-content ">
+                    <div class="item   items-center absolute left-16 top-[30%]">
+                        <button class="bg-black text-white px-3  py-1 rounded-[0.5em] text-[10px] font-bold my-2">Quick fashion</button>
+                        <h1 class="text-gray-400 text-4xl my-2">Fit Your Wardorbe !</h1>
+                        <h1 class="uppercase font-bold text-3xl my-2">with luxury items</h1>
+                        <button class="bg-red-400 text-white p-2 rounded-full">shop new</button>
+                    </div>
+                   
+                  
+                   </div>
+                   <div class="swiper-slide before:content('') before:top-[10%] before:left-[5%] before:w-[500px] before:h-[340px] before:bg-white before:absolute before:filter before:blur-3xl before:opacity-90">
+                    <img src="./assets/slider/slider2.jpg" alt="" class="w-full h-full  bg-center bg-auto bg-origin-content bg-clip-content ">
+                    <div class="item   items-center absolute left-16 top-[30%]">
+                        <button class="bg-black text-white px-3  py-1 rounded-[0.5em] text-[10px] font-bold my-2">Qick office</button>
+                        <h1 class="text-gray-400 text-4xl my-2 capitalize"> wooden minimal sofa </h1>
+                        <h1 class="uppercase font-bold text-3xl my-2">extra 50% off</h1>
+                        <button class="bg-red-400 text-white p-2 rounded-full">shop new</button>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide before:content('') before:top-[10%] before:left-[5%] before:w-[500px] before:h-[340px] before:bg-white before:absolute before:filter before:blur-3xl before:opacity-90">
+                    <img src="./assets/slider/slider3.jpg" alt="" class="w-full h-full  bg-center bg-auto bg-origin-content bg-clip-content ">
+                    <div class="item   items-center absolute left-16 top-[30%]">
+                        <button class="bg-black text-white px-3  py-1 rounded-[0.5em] text-[10px] font-bold my-2">Best Deals</button>
+                        <h1 class="text-gray-400 text-4xl my-2 capitalize"> Home Workout </h1>
+                        <h1 class="uppercase font-bold text-3xl my-2">Accenssories</h1>
+                        <button class="bg-red-400 text-white p-2 rounded-full">shop new</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </main>
+        <section class="px-[15%] mt-10">
+            <div class="brans  flex flex-wrap justify-center mx-auto">
+                <div class="zara">
+                    <div class="">
+                        <img src="./assets/brands/zara.png" alt="" class="opacity-40 ">
+
+                    </div>
+
+                    <div class="absolute bg-gray-400"></div>
+                </div>
+                <div class="samsung">
+                    <img src="./assets/brands/samsung.png" alt="" class="opacity-40">
+                </div>
+                <div class="oppo">
+                    <img src="./assets/brands/oppo.png" alt="" class="opacity-40">
+                </div>
+                <div class="asus">
+                    <img src="./assets/brands/asus.png" alt="" class="opacity-40">
+                </div>
+                <div class="hurley">
+                    <img src="./assets/brands/hurley.png" alt="" class="opacity-40">
+                </div>
+                <div class="d&g">
+                    <img src="./assets/brands/dng.png" alt="" class="opacity-40">
+                </div>
+            </div>
+        </section>
+        <div class="products px-[10%]">
+            <div class="product-top mt-5 relative ">
+                <h1 class="capitalize font-bold ml-10">trending products</h1>
+                <div class="w-7 h-7 bg-purple-300 rounded-full absolute top-[-5px] shadow shadow-[60px 35px 60px 15px ] shadow-slate-500"></div>
+                <div class="w-full bg-gray-400 my-5 h-[1px]"></div>
+            </div>
+            <div class="products-trending flex my-5 gap-10 justify-between ">
+                <div class="product-left mt-2  border-[2px] border-black rounded-[4px]">
+                    <div class="offer">
+                        <h1 class="text-lg uppercase text-center mt-5">offer ends ad</h1>
+                        <div class="time mt-2 flex justify-center text-center mx-auto">
+                            <div class="hour flex justify-center">
+                                <div class="bg-slate-200  w-6 h-6">1</div>
+                                <span class="mx-2">:</span>
+                            </div>
+                            <div class="hour flex justify-center">
+                                <div class="bg-slate-200  w-6 h-6">15</div>
+                                <span class="mx-2">:</span>
+                            </div>
+                            <div class="hour flex justify-center">
+                                <div class="bg-slate-200  w-6 h-6">27</div>
+                                <span class="mx-2">:</span>
+                            </div>
+                            <div class="hour flex justify-center">
+                                <div class="bg-slate-200  w-6 h-6">60</div>
+                            </div>
+                        </div>
+                    </div>
+                   <div>
+                    <div class="img px-[10%] mt-5 w-[100%] h-full  ">
+                        <div class="relative group">
+
+
+                            <div class="top-9 right-0 w-7 h-7  absolute ">
+
+                                <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 hover:bg-gray-700"></i>
+                            </div>
+                            <div class="top-[72px] right-0 w-7 h-7  absolute ">
+    
+                                <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 hover:bg-gray-700"></i>
+                            </div>
+
+                            <img src="./assets/products/apparel4.jpg" alt="" class="w-full h-full ">
+
+                            <div class="flex flex-col justify-center right-0 top-0 absolute">
+                                <i class="fa-regular fa-heart bg-slate-100 rounded-full p-2 hover:bg-red-700"></i>
+                            </div>
+                            <h1 class="text-[12px] absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white ">31%</h1>
+                        </div>
+                     </div>
+                     <div class="px-[10%]">
+                    <div class="stars flex my-5">
+                        <div class="icons">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                        </div>
+                        <small>(2,546)</small>
+                    </div>
+                   
+                   <div class="prodcut-desc">
+                    <h1 class="capitalize font-bold">happy salled womens summer boho floral</h1>
+
+                    <div class="price flex items-center my-5">
+
+                        <h1 class="text-red-400 ">$129.99</h1>
+                        <small class="line-through mx-2">6.189.98</small>
+                    </div>
+                    <div class="info flex justify-between my-5">
+                        <small>stock 107</small>
+                        <small>sold:3,459</small>
+                    </div>
+                    <div class="border-2 w-full my-5 bg-transparent">
+                        <div class="w-1/4 border-2 border-purple-500"></div>
+                    </div>
+                   </div>
+                </div>
+
+                </div>
+                </div>
+
+                <div class="product-middle flex flex-col justify-between">
+                   <div class="product-one gap-5 flex justify-between w-[450px]">
+                    <div class="left mt-2 relative w-1/2 h-[200px]  group">
+
+                        <img src="./assets/products/shoe1.jpg" alt="" class="  h-full ">
+                        <div class="top-9 right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                        </div>
+                        <div class="top-[72px] right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                        </div>
+                        <div class="flex flex-col justify-center right-0 top-0 absolute">
+                            <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                           
+                        </div>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">32%</h1>
+                    </div>
+                    <div class="right w-1/2">
+                        <div>
+                            <a class="font-bold hover:text-blue-800 text-line" href="">men slip on shoes casual with arch support insoles</a>
+                        </div>
+                        <div class="stars flex my-2">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <small>(2,251)</small>
+                            </div>
+                        </div>
+                        <small>2584 sold</small>
+                        <h1 class="flex items-center text-red-400 my-2">$80.90
+                            <small class="text-black line-through mx-2">611.90</small>
+                        </h1>
+                        <small>free shipping</small>
+                    </div>
+                   </div>
+
+                  
+
+                  
+                   <div class="product-two gap-5 flex justify-between w-[450px]">
+                    <div class="left mt-2 relative w-1/2 h-[200px] group">
+
+                        <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full ">
+                        <div class="top-9 right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                        </div>
+                        <div class="top-[72px] right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                        </div>
+                        <div class="flex flex-col justify-center right-0 top-0 absolute">
+                            <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                           
+                        </div>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">32%</h1>
+                    </div>
+                    <div class="right w-1/2">
+                        <div>
+                            <a class="font-bold hover:text-blue-800 text-line" href="">men slip on shoes casual with arch support insoles</a>
+                        </div>
+                        <div class="stars flex my-2">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <small>(2,251)</small>
+                            </div>
+                        </div>
+                        
+                        <h1 class="flex items-center text-red-400 my-2">$56.50
+                            <small class="text-black line-through mx-2">675.50</small>
+                        </h1>
+                        <small class="block">2584 sold</small>
+                        <small class="block">free shipping</small>
+                        <small class="text-red-400 block">stock 7 left</small>
+                    </div>
+                   </div>
+                   <div class="product-three gap-5 flex justify-between w-[450px]">
+                    <div class="left mt-2 relative w-1/2 h-[200px] group">
+
+                        <img src="./assets/products/home1.jpg" alt="" class=" w-full h-full ">
+                        <div class="top-9 right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                        </div>
+                        <div class="top-[72px] right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                        </div>
+                        <div class="flex flex-col justify-center right-0 top-0 absolute">
+                            <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                           
+                        </div>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">37%</h1>
+                    </div>
+                    <div class="right w-1/2">
+                        <div>
+                            <a class="font-bold hover:text-blue-800 text-line" href="">vonanda velvet sofa couch, mid century modern...</a>
+                        </div>
+                        <div class="stars flex my-2">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <small>(1,559)</small>
+                            </div>
+                        </div>
+                        
+                        <h1 class="flex items-center text-red-400 my-2">$469.99
+                            <small class="text-black line-through mx-2">6766.99</small>
+                        </h1>
+                        <small>2151 sold</small>
+                    </div>
+                   </div>
+                  
+                   <div class="product-four gap-5 flex justify-between w-[450px]">
+                    <div class="left mt-2 relative w-1/2 h-[200px] group">
+
+                        <img src="./assets/products/electronic3.jpg" alt="" class=" w-full h-full ">
+                        <div class="top-9 right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                        </div>
+                        <div class="top-[72px] right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                        </div>
+                        <div class="flex flex-col justify-center right-0 top-0 absolute">
+                            <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                           
+                        </div>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">37%</h1>
+                    </div>
+                    <div class="right w-1/2">
+                        <div >
+                            <a class="font-bold hover:text-blue-800 text-line" href="">wirless headphones over ear, bluethooth headphones with...</a>
+                        </div>
+                        <div class="stars flex my-2">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <small>(1,559)</small>
+                            </div>
+                        </div>
+                        
+                        <h1 class="flex items-center text-red-400 my-2">$469.99
+                            <small class="text-black line-through mx-2">6766.99</small>
+                        </h1>
+                        <small>2151 sold</small>
+                    </div>
+                   </div>
+                   </div>
+                <div class="product-right flex flex-col justify-between ">
+                    <div class="product-one gap-5 flex w-[450px] ">
+                     <div class="left mt-2 relative w-1/2 h-[200px]  group">
+ 
+                         <img src="./assets/products/apparel3.jpg" alt="" class=" w-full h-full object-cover bg-center bg-cover">
+                         <div class="top-9 right-0 w-7 h-7  absolute ">
+ 
+                             <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                         </div>
+                         <div class="top-[72px] right-0 w-7 h-7  absolute ">
+ 
+                             <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                         </div>
+                         <div class="flex flex-col justify-center right-0 top-0 absolute">
+                             <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                            
+                         </div>
+                         <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">30%</h1>
+                     </div>
+                     <div class="right w-1/2">
+                         <div>
+                             <a class="font-bold hover:text-blue-800 text-line" href="">black womens coat dress</a>
+                         </div>
+                         <div class="stars flex my-2">
+                             <div>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                             </div>
+                             <div>
+                                 <small>(1,273)</small>
+                             </div>
+                         </div>
+                        
+                         <h1 class="flex items-center text-red-400 my-2">$45.95
+                             <small class="text-black line-through mx-2">611.90</small>
+                         </h1>
+                         <small class="block">1429 sold</small>
+                         <small>free shipping</small>
+                     </div>
+                    </div>
+ 
+                   
+ 
+                   
+                    <div class="product-two gap-5 flex justify-between w-[450px]">
+                     <div class="left mt-2 relative  w-1/2 h-[200px] group">
+ 
+                         <img src="./assets/products/apparel2.jpg" alt="" class="w-full h-full ">
+                         <div class="top-9 right-0 w-7 h-7  absolute ">
+ 
+                             <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                         </div>
+                         <div class="top-[72px] right-0 w-7 h-7  absolute ">
+ 
+                             <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                         </div>
+                         <div class="flex flex-col justify-center right-0 top-0 absolute">
+                             <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                            
+                         </div>
+                         <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">47%</h1>
+                     </div>
+                     <div class="right w-1/2">
+                         <div>
+                             <a class="font-bold hover:text-blue-800 text-line" href="">womes lightwhight knit hoodie sweater pulluover</a>
+                         </div>
+                         <div class="stars flex my-2">
+                             <div>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                             </div>
+                             <div>
+                                 <small>(2,251)</small>
+                             </div>
+                         </div>
+                         
+                         <h1 class="flex items-center text-red-400 my-2">$37.50
+                             <small class="text-black line-through mx-2">675.50</small>
+                         </h1>
+                         <small class="block">1257 sold</small>
+                         <small class="block">free shipping</small>
+                         
+                     </div>
+                    </div>
+                    <div class="product-three gap-5 flex justify-between w-[450px] ">
+                        <div class="left mt-2 relative w-1/2 h-[200px] group">
+    
+                            <img src="./assets/products/home2.jpg" alt="" class=" w-full h-full ">
+                            <div class="top-9 right-0 w-7 h-7  absolute ">
+    
+                                <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                            </div>
+                            <div class="top-[72px] right-0 w-7 h-7  absolute ">
+    
+                                <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                            </div>
+                            <div class="flex flex-col justify-center right-0 top-0 absolute">
+                                <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                               
+                            </div>
+                            <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">18%</h1>
+                        </div>
+                        <div class="right w-1/2 ">
+                            <div>
+                                <a class="font-bold hover:text-blue-800 text-line" href="">dimmable celling light modern</a>
+                            </div>
+                            <div class="stars flex my-2">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                                <div>
+                                    <small>(335)</small>
+                                </div>
+                            </div>
+                            <h1 class="flex items-center text-red-400 my-2">$129.99
+                                <small class="text-black line-through mx-2">6159.99</small>
+                            </h1>
+                            <small class="block">2584 sold</small>  
+                        </div>
+                       </div>
+                    <div class="product-four gap-5 flex justify-between w-[450px]">
+                     <div class="left mt-2 relative w-1/2 h-[200px] group">
+ 
+                         <img src="./assets/products/home3.jpg" alt="" class=" w-full h-full ">
+                         <div class="top-9 right-0 w-7 h-7  absolute ">
+ 
+                             <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                         </div>
+                         <div class="top-[72px] right-0 w-7 h-7  absolute ">
+ 
+                             <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                         </div>
+                         <div class="flex flex-col justify-center right-0 top-0 absolute">
+                             <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                            
+                         </div>
+                         <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">18%</h1>
+                     </div>
+                     <div class="right w-1/2">
+                         <div>
+                             <a class="font-bold hover:text-blue-800 text-line" href="">modern storage cabinet with door & drawers</a>
+                         </div>
+                         <div class="stars flex my-2">
+                             <div>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                                 <i class="fa-solid fa-star text-yellow-400"></i>
+                             </div>
+                             <div>
+                                 <small>(335)</small>
+                             </div>
+                         </div>
+                         <h1 class="flex items-center text-red-400 my-2">$129.99
+                             <small class="text-black line-through mx-2">6159.99</small>
+                         </h1>
+                         <small class="block">2584 sold</small>  
+                     </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="featured-products  my-16">
+            <div class="product-top mt-5 relative flex justify-between px-[10%]">
+                <div class="left">
+                    <h1 class="capitalize font-bold ml-10">featured products</h1>
+                <div class="w-7 h-7 bg-purple-300 rounded-full absolute top-[-5px] shadow shadow-[60px 35px 60px 15px ] shadow-slate-500"></div>
+                
+                </div>
+                <div class="right flex items-center">
+                    <h1>view all </h1>
+                    <i class="fa-sharp fa-solid fa-right-long mx-5"></i>
+                </div>
+            </div>
+            <div class="w-full bg-gray-400 my-5 h-[1px]"></div>
+
+            <div class="all-products-featured gap-5  px-[10%]  ">
+                <div class="col-1 flex justify-between flex-wrap ">
+                <div class="product   flex flex-col ">
+                    <div class="top mt-2 relative w-[250px] h-[250px]  group overflow-hidden">
+
+                        <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                        <div class="top-9 right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                        </div>
+                        <div class="top-[72px] right-0 w-7 h-7  absolute ">
+
+                            <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                        </div>
+                        <div class="flex flex-col justify-center right-0 top-0 absolute">
+                            <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                           
+                        </div>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                    </div>
+                    <div class="bottom w-[200px] mt-5">
+                      
+                        <div class="stars flex my-2">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <small>(1,273)</small>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                        </div>
+                        <div class="price flex items-center">
+                            <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                            <small class="line-through mx-5">676.60</small>
+                        </div>
+            </div>
+        </div>
+        <div class="product gap-5  flex flex-col ">
+            <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
+
+                <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                <div class="top-9 right-0 w-7 h-7  absolute ">
+
+                    <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                </div>
+                <div class="top-[72px] right-0 w-7 h-7  absolute ">
+
+                    <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                </div>
+                <div class="flex flex-col justify-center right-0 top-0 absolute">
+                    <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                   
+                </div>
+                <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+            </div>
+            <div class="right w-[200px]">
+              
+                <div class="stars flex my-2">
+                    <div>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+                    <div>
+                        <small>(1,273)</small>
+                    </div>
+                </div>
+                <div>
+                    <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                </div>
+                <div class="price flex items-center">
+                    <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                    <small class="line-through mx-5">676.60</small>
+                </div>
+             </div>
+            </div>
+            <div class="product gap-5  flex flex-col ">
+                <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
+    
+                    <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                    <div class="top-9 right-0 w-7 h-7  absolute ">
+    
+                        <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                    </div>
+                    <div class="top-[72px] right-0 w-7 h-7  absolute ">
+    
+                        <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                    </div>
+                    <div class="flex flex-col justify-center right-0 top-0 absolute">
+                        <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                       
+                    </div>
+                    <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                </div>
+                <div class="right w-[200px]">
+                  
+                    <div class="stars flex my-2">
+                        <div>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                        </div>
+                        <div>
+                            <small>(1,273)</small>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                    </div>
+                    <div class="price flex items-center">
+                        <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                        <small class="line-through mx-5">676.60</small>
+                    </div>
+                 </div>
+                </div>
+               
+                <div class="product gap-5  flex flex-col ">
+                    <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
+        
+                        <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                        <div class="top-9 right-0 w-7 h-7  absolute ">
+        
+                            <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                        </div>
+                        <div class="top-[72px] right-0 w-7 h-7  absolute ">
+        
+                            <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                        </div>
+                        <div class="flex flex-col justify-center right-0 top-0 absolute">
+                            <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                           
+                        </div>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                    </div>
+                    <div class="right w-[200px]">
+                      
+                        <div class="stars flex my-2">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <small>(1,273)</small>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                        </div>
+                        <div class="price flex items-center">
+                            <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                            <small class="line-through mx-5">676.60</small>
+                        </div>
+                     </div>
+                     </div>
+                    </div>
+                   
+
+
+                    <div class="col-2 flex justify-between flex-wrap ">
+                        <div class="product   flex flex-col ">
+                            <div class="top mt-2 relative w-[250px] h-[250px]  group overflow-hidden">
+        
+                                <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                                <div class="top-9 right-0 w-7 h-7  absolute ">
+        
+                                    <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                                </div>
+                                <div class="top-[72px] right-0 w-7 h-7  absolute ">
+        
+                                    <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                                </div>
+                                <div class="flex flex-col justify-center right-0 top-0 absolute">
+                                    <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                                   
+                                </div>
+                                <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                            </div>
+                            <div class="bottom w-[200px] mt-5">
+                              
+                                <div class="stars flex my-2">
+                                    <div>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                    </div>
+                                    <div>
+                                        <small>(1,273)</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                                </div>
+                                <div class="price flex items-center">
+                                    <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                                    <small class="line-through mx-5">676.60</small>
+                                </div>
+                    </div>
+                </div>
+                <div class="product gap-5  flex flex-col ">
+                    <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
+        
+                        <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                        <div class="top-9 right-0 w-7 h-7  absolute ">
+        
+                            <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                        </div>
+                        <div class="top-[72px] right-0 w-7 h-7  absolute ">
+        
+                            <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                        </div>
+                        <div class="flex flex-col justify-center right-0 top-0 absolute">
+                            <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                           
+                        </div>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                    </div>
+                    <div class="right w-[200px]">
+                      
+                        <div class="stars flex my-2">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <small>(1,273)</small>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                        </div>
+                        <div class="price flex items-center">
+                            <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                            <small class="line-through mx-5">676.60</small>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="product gap-5  flex flex-col ">
+                        <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
+            
+                            <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                            <div class="top-9 right-0 w-7 h-7  absolute ">
+            
+                                <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                            </div>
+                            <div class="top-[72px] right-0 w-7 h-7  absolute ">
+            
+                                <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                            </div>
+                            <div class="flex flex-col justify-center right-0 top-0 absolute">
+                                <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                               
+                            </div>
+                            <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                        </div>
+                        <div class="right w-[200px]">
+                          
+                            <div class="stars flex my-2">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                                <div>
+                                    <small>(1,273)</small>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                            </div>
+                            <div class="price flex items-center">
+                                <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                                <small class="line-through mx-5">676.60</small>
+                            </div>
+                         </div>
+                        </div>
+                       
+                        <div class="product gap-5  flex flex-col ">
+                            <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
+                
+                                <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                                <div class="top-9 right-0 w-7 h-7  absolute ">
+                
+                                    <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
+                                </div>
+                                <div class="top-[72px] right-0 w-7 h-7  absolute ">
+                
+                                    <i class="fa-sharp fa-solid fa-chart-simple bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-3px] group-hover:opacity-100 translate-x-[30px] transition-all duration-700 opacity-0 "></i>
+                                </div>
+                                <div class="flex flex-col justify-center right-0 top-0 absolute">
+                                    <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
+                                   
+                                </div>
+                                <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                            </div>
+                            <div class="right w-[200px]">
+                              
+                                <div class="stars flex my-2">
+                                    <div>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                        <i class="fa-solid fa-star text-yellow-400"></i>
+                                    </div>
+                                    <div>
+                                        <small>(1,273)</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                                </div>
+                                <div class="price flex items-center">
+                                    <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                                    <small class="line-through mx-5">676.60</small>
+                                </div>
+                             </div>
+                             </div>
+                            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="index.js"></script>
+  </body>
+</html>

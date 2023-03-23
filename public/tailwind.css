@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities{
+
+    .slide{
+
+        width: calc(100% - (300px + 1em));
+        margin-left: auto;
+    }
+
+    @media (max-width:640px){
+        .all-products-featured{
+           justify-content: center;
+        }
+
+    }
+
+    @media (min-width:768px){
+        .all-products-featured .product .top {
+            width: 320px;
+        }
+
+    }
+
+    @media (max-width:768px) {
+       
+       .all-products-featured{
+
+            padding: 0 5%;
+       }
+    }
+
+    @media(max-width:1124px){
+
+        
+        .products-trending{
+            display: flex;
+            flex-direction: column;
+
+    
+        }
+
+
+    }
+}
