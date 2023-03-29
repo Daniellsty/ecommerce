@@ -12,11 +12,11 @@
     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
   />
   </head>
-  <body>
+  <body >
 
     <div class="container-main w-full px-[10%] ">
 
-        <header>
+        <header class="header">
             <div class="header-top flex flex-row justify-between">
                 <div class="header-top-left flex items-center">
                     <small class="mx-2 cursor-pointer">blog</small>
@@ -56,8 +56,8 @@
                     <span class="mx-2 cursor-pointer">shop</span>
                     <span class="mx-4 cursor-pointer w-10 h-16 flex items-center justify-center group  ">women
                         <i class="fa-solid fa-angle-down"></i>
-                        <div class="flex justify-between absolute invisible group-hover:visible  w-screen  top-[130px] right-0 bg-slate-200 z-10 overflow-hidden px-[10%] py-[40px] shadow-xl">
-                        <div class="woman-products flex gap-20 justify-between w-1/2">
+                        <div class="flex justify-between absolute invisible group-hover:visible  w-screen h top-[130px] right-0 bg-slate-200 z-10 overflow-hidden px-[10%] py-[40px] shadow-xl">
+                        <div class="woman-products flex gap-20 justify-between ">
                             <div class="1 ">
                                 <h1 class="font-bold uppercase hover:text-gray-400">womens clothing</h1>
                                 <h1 class="capitalize hover:text-gray-400">dresses</h1>
@@ -102,16 +102,16 @@
                                 <h1 class="capitalize hover:text-gray-400">zara  &emsp; h&m</h1>
                                 <h1 class="capitalize hover:text-gray-400">cartier &emsp; chanel</h1>
                                 <h1 class="capitalize hover:text-gray-400">hurley</h1>
-                                <h1 class="capitalize hover:text-gray-400">view all brands <i class="fa-solid fa-arrow-right"></i></h1>
+                                <h1 class="capitalize hover:text-gray-400">view all brands <i class="fa-solid fa-arrow-right cursor-pointer"></i></h1>
                             </div>
                        
                         </div>
 
-                       <div class="mb-[20px] w-[270px] h-[300px]  relative overflow-hidden">
+                       <div class="mb-[20px] w-[279px] h-[400px] relative overflow-hidden hidden lg:block">
                         <div class="img w-full relative w-full h-full pb-[20px]  ">
-                            <img src="./assets/products/apparel4.jpg " class=" bg-cover bg-center transition hover:scale-110 duration-500 " alt="">
+                            <img src="./assets/products/apparel4.jpg " class=" bg-cover bg-center overflow-hidden object-cover transition hover:scale-110 duration-500 " alt="">
                         </div>
-                        <div class="pic-details flex flex-col justify-end   absolute top-[70%] mx-[10%] ">
+                        <div class="pic-details flex flex-col justify-end absolute top-[40%] left-[10%] z-10  ">
                             <h1 class="font-bold text-2xl uppercase ">most wandted!</h1>
                             <button class="bg-red-400 w-24 h-10 text-center m-auto rounded-full text-white hover:bg-black">order now</button>
                         </div>
@@ -133,13 +133,13 @@
                         </i>
                     </div>
                     <div class="shop relative mx-2">
-                        <i class=" fa-sharp fa-solid fa-cart-shopping cursor-pointer "></i>
-                            <div class="absolute top-[-9px] left-[10px] bg-black rounded-full w-4 h-4 text-white leading-4 text-xs text-center">0</div>
+                        <i class="shop-cart fa-sharp fa-solid fa-cart-shopping cursor-pointer "></i>
+                            <div class="absolute top-[-9px] left-[10px] bg-black rounded-full w-4 h-4 text-white leading-4 text-xs text-center">4</div>
                         </i>
                     </div>
                     <div class="total flex flex-col mx-2">
                         <small class=" text-gray-400">Total</small>
-                        <span class="font-bold">$0.00</span>
+                        <span class="font-bold">$1,622.95</span>
                     </div>
                 </div>
                 </div>
@@ -153,7 +153,7 @@
                 </div>
                </div>
                 <div class="header-bottom-right bg-white px-[25%] h-[50px] flex  relative rounded-lg ">
-                    <div class="absolute left-5 h-[50px]">
+                    <div class="absolute left-5 h-[65px]">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="search for Products " class="border-none bg-transparent h-full  mr-5 outline-none">
                         
@@ -161,7 +161,341 @@
                     <button class="bg-red-400 absolute right-0 text-white h-full leading-[50px] px-5 rounded-tr-lg rounded-br-lg hover:bg-black">search</button>
                 </div>
             </div>
+
+            <div class="cart-item show absolute top-0 right-10 w-[400px] overflow-scroll bg-white shadow-xl shadow-gray-400 z-10 pl-[2%]">
+                <div class="top  mt-10 border-b pb-5">
+                    <h1 class="text-2xl text-gray-400">4 items in cart</h1>
+                </div>
+                <div class="items flex flex-col  gap-10 ">
+                    <div class="item mt-5 flex justify-between ">
+                        <div class="left  w-1/3 h-[65px] ">
+                            <img src="./assets/products/home3.jpg" alt="" class="block w-full h-full">
+                        </div>
+                        <div class="right  w-2/3 ml-10">
+                            <div class="top flex justify-between">
+                                <h1 class="capitalize">dimmable celling light modern</h1>
+                                <b class="ml-5 cursor-pointer">X</b>
+                            </div>
+                            <div class="mt-3 flex flex-col">
+                                <h1>$279.99
+                                    <small class="bg-red-400 p-1 leading-1 rounded-lg text-white mb-[10px]">new</small>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mt-2 flex ">
+                        <div class="left w-1/3 h-[65px] ">
+                            <img src="./assets/products/home4.jpg" alt="" class="block w-full h-full">
+                        </div>
+                        <div class="right w-2/3 ml-10">
+                            <div class="top  flex ">
+                                <h1 class="capitalize">modern storage cabinet with door & 3 drawers</h1>
+                                <b class="ml-5 cursor-pointer">X</b>
+                            </div>
+                            <div class="mt-3 flex flex-col">
+                                <h1>$279.99
+                                    <small class="bg-red-400 p-1 leading-1 rounded-lg text-white mb-[10px]">new</small>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mt-2 flex justify-between  ">
+                        <div class="left  w-1/3 h-[65px]  ">
+                            <img src="./assets/products/home5.jpg" alt="" class="block w-full h-full">
+                        </div>
+                        <div class="right w-2/3 ml-10">
+                            <div class="top flex justify-between">
+                                <h1 class="capitalize">mohana welvet soaf couc </h1>
+                                <b class="ml-5 cursor-pointer">X</b>
+                            </div>
+                            <div class="mt-3 flex flex-col">
+                                <h1>$325.69
+                                    <small class="bg-red-400 p-1 leading-1 rounded-lg text-white mb-[10px]">new</small>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mt-2 flex justify-between ">
+                        <div class="left  w-1/3 h-[55px] ">
+                            <img src="./assets/products/home2.jpg" alt="" class="block w-full h-full">
+                        </div>
+                        <div class="right w-2/3 ml-5">
+                            <div class="top flex justify-between">
+                                <h1 class="capitalize">awesome bed for a couple</h1>
+                                <b class="ml-5 cursor-pointer">X</b>
+                            </div>
+                            <div class="mt-3 flex flex-col">
+                                <h1>$279.99
+                                    <small class="bg-red-400 p-1 leading-1 rounded-lg text-white mb-[10px]">new</small>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price ">
+                        <small>subtotal</small>
+                        <h1 class="font-bold text-2xl">$1,622.95</h1>
+                    </div>
+                    <div class="buttons flex flex-col gap-5 ">
+                        <button class="bg-red-400 py-4 text-white rounded-full">checkout</button>
+                        <button class="bg-gray-800 py-4 text-white rounded-full">view cart</button>
+                    </div>
+                </div>
+            </div>
+            
         </header>
+        <div class="mobile-header hidden flex justify-between px-[10%]  ">
+            <div class="left mt-5 flex items-center">
+                <i class="hamburger-menu fa fa-bars mr-10 text-2xl cursor-pointer" aria-hidden="true"></i>
+                <h1 class="mx-2 font-bold text-3xl relative">.store
+                    <div class="w-7 h-7 bg-purple-300 rounded-full absolute top-[-5px] left-[-20px] shadow shadow-[60px 35px 60px 15px ] shadow-slate-500"></div>
+                </h1>
+            </div>
+            <div class="right flex items-center mt-5">
+                <div class="shop relative mx-2">
+                    <a href="./cart.html">
+                        <i class=" fa-sharp fa-solid fa-cart-shopping cursor-pointer "></i>
+                        <div class="absolute top-[-9px] left-[10px] bg-black rounded-full w-4 h-4 text-white leading-4 text-xs text-center">0</div>
+                    </i>
+                    </a>
+                </div>
+                <div  class="total flex flex-col mx-2">
+                    <small class=" text-gray-400">Total</small>
+                    <span class="font-bold">$1,622.95</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="menu-all-items hidden fixed  w-[70%] absolute transition-all duration-500 z-10 transform translate-x-[-33rem] h-screen">
+            
+            <div class="border-[1px] mt-5"></div>
+            <div class="main-menu   bg-white mt-[-6rem] z-100 overflow-scroll h-screen ">
+                <div class="top flex justify-between items-center bg-gray-600 w-full px-[10%] pb-8 rounded-br-[100px] z-auto">
+                    <div class="mt-5 flex items-center">
+                        
+                        <h1 class="mx-2 font-bold text-3xl relative text-white">.store
+                            <div class="w-7 h-7 bg-purple-400 rounded-full absolute top-[-5px] left-[-20px] shadow shadow-[60px 35px 60px 15px ] shadow-slate-500 border-[4px]"></div>
+                        </h1>
+                    </div>
+                    <i class="remove fa-sharp fa-solid fa-xmark mt-7 text-white cursor-pointer text-2xl bg-slate-200/20 px-3 py-2 rounded-full"></i>
+                </div>
+                    <div class="button text-center mt-5">
+                        <button class="py-2 w-[90%] rounded-lg bg-slate-200">all Departments</button>
+                    </div>
+                <div class="px-[5%] mt-7 overfow-scroll h-screen ">
+                <div class="1  my-10">
+                 <div class="flex justify-between">
+                    <div class="flex items-center">
+                        <i class="fa-brands fa-discord mr-5"> </i>
+                        <div>
+                            <h1 class="mx-2m  flex flex-col font-bold capitalize">beauty</h1>
+                        </div>
+                           
+                        </div>
+                      <div class="right">
+                           <i class="scroll fa-solid fa-chevron-down group cursor-pointer"></i>
+                       </div>
+                 </div>
+                    <div class="items-beauty hidden  ml-10 mt-10">
+                        <h1 class="text-lg z-10  my-2 hover:text-blue-800 hover:text-gray-400">makeup</h1>
+                        <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">skin care</h1>
+                        <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">hair care</h1>
+                        <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">fragnece</h1>
+                        <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">foot & hand care</h1>
+                        <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">tools & accessories</h1>
+                        <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">shave & hair removal</h1>
+                        <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">personal care</h1>
+                    </div>
+                                      
+                   </div>
+
+                   <div class="2  my-10">
+                    <div class="flex justify-between">
+                       <div class="flex items-center">
+                        <i class="fa-brands fa-bluetooth-b mr-5"></i>
+                           <div>
+                               <h1 class="mx-2m  flex flex-col font-bold capitalize">Electronic</h1>
+                           </div>
+                              
+                           </div>
+                         <div class="right">
+                              <i class="scroll-1 fa-solid fa-chevron-down group cursor-pointer"></i>
+                          </div>
+                    </div>
+                       <div class="items-1 hidden ml-10 mt-10">
+                           <h1 class="text-lg z-10  my-2 hover:text-blue-800 hover:text-gray-400">camera</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">cell phones</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">computers</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">gps & navigation</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">headphones</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">home audio</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">television</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">video projectors </h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">wirless technology </h1>
+                       </div>
+                                         
+                      </div>
+   
+                      <div class="3  my-10">
+                        <div class="flex justify-between">
+                           <div class="flex items-center">
+                            <i class="fa-sharp fa-solid fa-person-half-dress mr-5 "> </i>
+                               <div>
+                                   <h1 class="mx-2m  flex flex-col font-bold capitalize">women fashion</h1>
+                               </div>
+                                  
+                               </div>
+                             <div class="right">
+                                  <i class="scroll-2 fa-solid fa-chevron-down group cursor-pointer"></i>
+                              </div>
+                        </div>
+                           <div class="items-2 hidden ml-10 mt-10">
+                               <h1 class="text-lg z-10  my-2 hover:text-blue-800 hover:text-gray-400">clothing</h1>
+                               <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">shoes</h1>
+                               <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">jewelry</h1>
+                               <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">watches</h1>
+                               <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">handbags</h1>
+                               <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">accessories</h1>
+                           </div>
+                                             
+                          </div>
+                          <div class="1 flex justify-between items-center  py-2 pr-10">
+                            <div class="left flex items-center px-2 font-bold">
+                                <i class="fa-sharp fa-solid fa-user-tie"></i>
+                                <h1 class="mx-2">men s Fashion</h1>
+                            </div>
+                </div>
+                <div class="4 flex justify-between items-center my-5 py-2 pr-10">
+                    <div class="left flex items-center px-2 font-bold">
+                        <i class="fa-sharp fa-solid fa-child-dress"></i>
+                        <h1 class="mx-2">girl s fashion</h1>
+                    </div>
+                   
+                </div>
+                <div class="5 flex justify-between items-center my-5 py-2 pr-10">
+                    <div class="left flex items-center px-2 font-bold">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <h1 class="mx-2">Boy s Fashion</h1>
+                    </div>
+                  
+                </div>
+                <div class="6 flex justify-between items-center my-5 py-2 pr-10">
+                    <div class="left flex items-center px-2 font-bold">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h1 class="mx-2">Health & Household</h1>
+                    </div>
+                   
+                </div>
+                <div class="7  my-10">
+                    <div class="flex justify-between">
+                       <div class="flex items-center">
+                        <i class="fa-sharp fa-solid fa-person-half-dress mr-5"> </i>
+                           <div>
+                               <h1 class="mx-2em  flex flex-col font-bold capitalize">home & kitchen</h1>
+                           </div>
+                              
+                           </div>
+                         <div class="right">
+                              <i class="scroll-3 fa-solid fa-chevron-down group cursor-pointer"></i>
+                          </div>
+                    </div>
+                       <div class="items-3 hidden ml-10 mt-10">
+                           <h1 class="text-lg z-10  my-2 hover:text-blue-800 hover:text-gray-400">kitchen & dining</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">kitchen</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">dining room</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">pantry</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">great room</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400">breakfast</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 font-bold my-5">living</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">living room</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">familiy room</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">surroom</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 font-bold my-5">bed & both</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">bathroom</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">powder room</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">bedroom</h1>
+                           <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">storage & closet</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 font-bold my-5">utility</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">laundry</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">garage</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">mudroom</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 font-bold my-5">outdoor</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">landscape</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">patio</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">deck</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">pool</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">backyard</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">porch</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">exterior</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">dutdoor kitchen</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">front yard</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">driveway</h1>
+                          <h1 class="text-lg z-10 my-2 hover:text-blue-800 hover:text-gray-400 ">poolhouse</h1>
+
+
+                       </div>
+                                         
+                      </div>
+                      <div class="1 flex justify-between items-center font-bold my-5 py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-sharp fa-solid fa-glass-water-droplet"></i>
+                            <h1 class="mx-2">Pet Supplles</h1>
+                        </div>
+                      
+                    </div>
+                    <div class="1 flex justify-between items-center font-bold my-5 py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-solid fa-volleyball"></i>
+                            <h1 class="mx-2 capitalize">Sports</h1>
+                        </div>
+                       
+                    </div>
+                    <div class="1 flex justify-between items-center font-bold my-5 py-2 pr-10">
+                        <div class="left flex items-center px-2 ">
+                            <i class="fa-brands fa-buysellads"></i>
+                            <h1 class="mx-2 capitalize">Best Seller</h1>
+                        </div>
+                    </div>
+                    <div class="border mb-10"></div>
+                    <div class="flex flex-col justify-center text-justify">
+                        <h1 class="my-2 capitalize">home</h1>
+                        <h1 class="my-2 capitalize">shop</h1>
+                        <h1 class="my-2 capitalize">women</h1>
+                        <h1 class="my-2 capitalize">men</h1>
+                        <span class="my-2 relative cursor-pointer capitalize">sports
+                            <div class="w-8 h-5 bg-red-300 text-xs absolute top-[-10px] left-[50px] text-white rounded-[4px] text-center">news</div>
+                         </span>
+                    </div>
+                    <div class="border my-10"></div>
+                    <div class="flex flex-col justify-center text-justify">
+                        <h1 class="my-2 capitalize">blog</h1>
+                        <h1 class="my-2 capitalize">featured products</h1>
+                        <h1 class="my-2 capitalize">whishlist</h1>
+                    </div>
+                    <div class="border my-10"></div>
+                    <div class="flex flex-col justify-center text-justify">
+                        <h1 class="my-2 capitalize">sign up</h1>
+                        <h1 class="my-2 capitalize">my account</h1>
+                        <h1 class="my-2 capitalize">order tracking</h1>
+                    </div>
+
+                    <div class="border my-10"></div>
+                    <div class="flex items-center text-justify mt-5">
+                        <h1 class="mx-2 uppercase bg-gray-400 p-2">usd</h1>
+                        <h1 class="mx-2 uppercase">euro</h1>
+                        <h1 class="mx-2 uppercase">gbp</h1>
+                        <h1 class="mx-2 uppercase">idr</h1>
+                    </div>
+                    <div class="border my-10"></div>
+                    <div class="flex items-center text-justify my-5 mb-10">
+                        <h1 class="mx-2 uppercase bg-gray-400 p-2">English</h1>
+                        <h1 class="mx-2 uppercase">German</h1>
+                        <h1 class="mx-2 uppercase">Spanish</h1>
+                        <h1 class="mx-2 uppercase">bahasa</h1>
+                    </div>
+            </div>
+        </div>
+        </div>
+       
         <main class="main px-[10%]">
             <div class="main-top  flex justify-between">
                 <div class="main-top-left border  w-[279px] h-[460px]">
@@ -221,7 +555,7 @@
                     <div class="1 flex justify-between items-center border py-2 pr-10">
                         <div class="left flex items-center px-2 ">
                             <i class="fa-sharp fa-solid fa-person-half-dress"> </i>
-                            <h1 class="mx-2">Womain s fashion</h1>
+                            <h1 class="mx-2">Women <sup><span class="text-lg">s</span> </sup>  fashion</h1>
                         </div>
                         <div class="right">
                             <i class="fa-solid fa-chevron-right group">
@@ -280,11 +614,11 @@
                             <i class="fa-solid fa-chevron-right group">
 
 
-                                <div class="beauty-details invisible group-hover:visible w-[55%] h-[460px] absolute z-10 font-serif">
+                                <div class="beauty-details invisible group-hover:visible w-[50%] h-[460px] absolute z-10 font-serif">
                                     <div class="flex flex-col   bg-[url('./assets/menu/menu_bg4.jpg')] bg-left-top  bg-cover w-full h-full  top-[-322px] left-[50px] absolute z-100  before:content('')  before:w-3/4 before:h-full before:bg-white before:absolute before:filter before:blur-3xl before:top-[50px] before:left-[-30px] before:opacity-15">
                                         <div class="flex px-5 mt-5 p-2 ml-5 z-10 capitalize">
 
-                                        <div class="mx-10">
+                                        <div class="mr-5">
 
                                             <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline text-xl">kitchen & dining</h1>
                                             <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">kitchen</h1>
@@ -299,7 +633,7 @@
                                             
                                         </div>
 
-                                        <div class="mx-10">
+                                        <div class="mx-5">
 
                                             <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline text-xl">bed & bath</h1>
                                             <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">bathroom</h1>
@@ -314,7 +648,7 @@
                                             
                                         </div>
 
-                                        <div class="mx-10">
+                                        <div class="mx-5">
 
                                             <h1 class=" z-10 my-2 hover:text-blue-800 hover:underline text-xl">outdoor</h1>
                                             <h1 class="font-bold z-10 my-2 hover:text-blue-800 hover:underline">landscape</h1>
@@ -449,20 +783,20 @@
                                 <span class="mx-2">:</span>
                             </div>
                             <div class="hour flex justify-center">
-                                <div class="bg-slate-200  w-6 h-6">15</div>
+                                <div class="hours bg-slate-200  w-6 h-6">19</div>
+                                <span class="mx-2">:</span>
+                            </div>
+                            <div class="min flex justify-center">
+                                <div class="minutes bg-slate-200  w-6 h-6">26</div>
                                 <span class="mx-2">:</span>
                             </div>
                             <div class="hour flex justify-center">
-                                <div class="bg-slate-200  w-6 h-6">27</div>
-                                <span class="mx-2">:</span>
-                            </div>
-                            <div class="hour flex justify-center">
-                                <div class="bg-slate-200  w-6 h-6">60</div>
+                                <div class="seconds bg-slate-200  w-6 h-6">39</div>
                             </div>
                         </div>
                     </div>
                    <div>
-                    <div class="img px-[10%] mt-5 w-[100%] h-full  ">
+                    <a  href="./dressProduct.html"class="block img px-[10%] mt-5 w-[100%] h-full  ">
                         <div class="relative group">
 
 
@@ -482,7 +816,7 @@
                             </div>
                             <h1 class="text-[12px] absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white ">31%</h1>
                         </div>
-                     </div>
+                     </a>
                      <div class="px-[10%]">
                     <div class="stars flex my-5">
                         <div class="icons">
@@ -537,7 +871,7 @@
                     </div>
                     <div class="right w-1/2">
                         <div>
-                            <a class="font-bold hover:text-blue-800 text-line" href="">men slip on shoes casual with arch support insoles</a>
+                            <a class="font-bold hover:text-blue-800 hover:underline" href="./shoeProduct.html">men slip on shoes casual with arch support insoles</a>
                         </div>
                         <div class="stars flex my-2">
                             <div>
@@ -582,7 +916,7 @@
                     </div>
                     <div class="right w-1/2">
                         <div>
-                            <a class="font-bold hover:text-blue-800 text-line" href="">men slip on shoes casual with arch support insoles</a>
+                            <a class="font-bold hover:text-blue-800  hover:underline" href="">men slip on shoes casual with arch support insoles</a>
                         </div>
                         <div class="stars flex my-2">
                             <div>
@@ -625,7 +959,7 @@
                     </div>
                     <div class="right w-1/2">
                         <div>
-                            <a class="font-bold hover:text-blue-800 text-line" href="">vonanda velvet sofa couch, mid century modern...</a>
+                            <a class="font-bold hover:text-blue-800  hover:underline" href="">vonanda velvet sofa couch, mid century modern...</a>
                         </div>
                         <div class="stars flex my-2">
                             <div>
@@ -667,7 +1001,7 @@
                     </div>
                     <div class="right w-1/2">
                         <div >
-                            <a class="font-bold hover:text-blue-800 text-line" href="">wirless headphones over ear, bluethooth headphones with...</a>
+                            <a class="font-bold hover:text-blue-800  hover:underline" href="">wirless headphones over ear, bluethooth headphones with...</a>
                         </div>
                         <div class="stars flex my-2">
                             <div>
@@ -710,7 +1044,7 @@
                      </div>
                      <div class="right w-1/2">
                          <div>
-                             <a class="font-bold hover:text-blue-800 text-line" href="">black womens coat dress</a>
+                             <a class="font-bold hover:text-blue-800  hover:underline" href="">black womens coat dress</a>
                          </div>
                          <div class="stars flex my-2">
                              <div>
@@ -756,7 +1090,7 @@
                      </div>
                      <div class="right w-1/2">
                          <div>
-                             <a class="font-bold hover:text-blue-800 text-line" href="">womes lightwhight knit hoodie sweater pulluover</a>
+                             <a class="font-bold hover:text-blue-800  hover:underline" href="">womes lightwhight knit hoodie sweater pulluover</a>
                          </div>
                          <div class="stars flex my-2">
                              <div>
@@ -799,7 +1133,7 @@
                         </div>
                         <div class="right w-1/2 ">
                             <div>
-                                <a class="font-bold hover:text-blue-800 text-line" href="">dimmable celling light modern</a>
+                                <a class="font-bold hover:text-blue-800  hover:underline" href="">dimmable celling light modern</a>
                             </div>
                             <div class="stars flex my-2">
                                 <div>
@@ -839,7 +1173,7 @@
                      </div>
                      <div class="right w-1/2">
                          <div>
-                             <a class="font-bold hover:text-blue-800 text-line" href="">modern storage cabinet with door & drawers</a>
+                             <a class="font-bold hover:text-blue-800  hover:underline" href="">modern storage cabinet with door & drawers</a>
                          </div>
                          <div class="stars flex my-2">
                              <div>
@@ -871,7 +1205,7 @@
                 </div>
                 <div class="right flex items-center">
                     <h1>view all </h1>
-                    <i class="fa-sharp fa-solid fa-right-long mx-5"></i>
+                    <i class="fa-sharp fa-solid fa-right-long mx-5 cursor-pointer"></i>
                 </div>
             </div>
             <div class="w-full bg-gray-400 my-5 h-[1px]"></div>
@@ -911,7 +1245,7 @@
                             </div>
                         </div>
                         <div>
-                            <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                            <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="">under armor men s tech</a>
                         </div>
                         <div class="price flex items-center">
                             <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
@@ -922,7 +1256,7 @@
         <div class="product gap-5  flex flex-col ">
             <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
 
-                <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                <img src="./assets/products/apparel2.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
                 <div class="top-9 right-0 w-7 h-7  absolute ">
 
                     <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
@@ -948,22 +1282,22 @@
                         <i class="fa-solid fa-star text-yellow-400"></i>
                     </div>
                     <div>
-                        <small>(1,273)</small>
+                        <small>(994)</small>
                     </div>
                 </div>
                 <div>
-                    <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                    <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="">women <sup>,s</sup> lightwhight knit hoddie swear pullover </a>
                 </div>
                 <div class="price flex items-center">
-                    <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
-                    <small class="line-through mx-5">676.60</small>
+                    <h1 class="text-red-400 text-2xl font-bold">$37.50</h1>
+                    <small class="line-through mx-5">645.50</small>
                 </div>
              </div>
             </div>
             <div class="product gap-5  flex flex-col ">
                 <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
     
-                    <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                    <img src="./assets/products/apparel3.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
                     <div class="top-9 right-0 w-7 h-7  absolute ">
     
                         <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
@@ -976,7 +1310,7 @@
                         <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
                        
                     </div>
-                    <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                    <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">31%</h1>
                 </div>
                 <div class="right w-[200px]">
                   
@@ -989,15 +1323,15 @@
                             <i class="fa-solid fa-star text-yellow-400"></i>
                         </div>
                         <div>
-                            <small>(1,273)</small>
+                            <small>(3,459)</small>
                         </div>
                     </div>
                     <div>
-                        <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                        <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="">happy sailed womens summer boho floral</a>
                     </div>
                     <div class="price flex items-center">
-                        <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
-                        <small class="line-through mx-5">676.60</small>
+                        <h1 class="text-red-400 text-2xl font-bold">$129.99</h1>
+                        <small class="line-through mx-5">6489.98</small>
                     </div>
                  </div>
                 </div>
@@ -1005,7 +1339,7 @@
                 <div class="product gap-5  flex flex-col ">
                     <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
         
-                        <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                        <img src="./assets/products/apparel4.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
                         <div class="top-9 right-0 w-7 h-7  absolute ">
         
                             <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
@@ -1018,7 +1352,7 @@
                             <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
                            
                         </div>
-                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">35%</h1>
                     </div>
                     <div class="right w-[200px]">
                       
@@ -1031,15 +1365,15 @@
                                 <i class="fa-solid fa-star text-yellow-400"></i>
                             </div>
                             <div>
-                                <small>(1,273)</small>
+                                <small>(10)</small>
                             </div>
                         </div>
                         <div>
-                            <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                            <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="">womens summer boho floral</a>
                         </div>
                         <div class="price flex items-center">
-                            <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
-                            <small class="line-through mx-5">676.60</small>
+                            <h1 class="text-red-400 text-2xl font-bold">$118.90</h1>
+                            <small class="line-through mx-5">618.90</small>
                         </div>
                      </div>
                      </div>
@@ -1051,7 +1385,7 @@
                         <div class="product   flex flex-col ">
                             <div class="top mt-2 relative w-[250px] h-[250px]  group overflow-hidden">
         
-                                <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                                <img src="./assets/products/shoe1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
                                 <div class="top-9 right-0 w-7 h-7  absolute ">
         
                                     <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
@@ -1064,7 +1398,7 @@
                                     <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
                                    
                                 </div>
-                                <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                                <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">32%</h1>
                             </div>
                             <div class="bottom w-[200px] mt-5">
                               
@@ -1077,22 +1411,22 @@
                                         <i class="fa-solid fa-star text-yellow-400"></i>
                                     </div>
                                     <div>
-                                        <small>(1,273)</small>
+                                        <small>(2,251)</small>
                                     </div>
                                 </div>
                                 <div>
-                                    <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                                    <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="./product.html">men slip on shoes casual with arch support insoles</a>
                                 </div>
                                 <div class="price flex items-center">
-                                    <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
-                                    <small class="line-through mx-5">676.60</small>
+                                    <h1 class="text-red-400 text-2xl font-bold">$80.90</h1>
+                                    <small class="line-through mx-5">6119.90</small>
                                 </div>
                     </div>
                 </div>
                 <div class="product gap-5  flex flex-col ">
                     <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
         
-                        <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                        <img src="./assets/products/shoe2.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
                         <div class="top-9 right-0 w-7 h-7  absolute ">
         
                             <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
@@ -1105,7 +1439,7 @@
                             <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
                            
                         </div>
-                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                        <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">30%</h1>
                     </div>
                     <div class="right w-[200px]">
                       
@@ -1118,14 +1452,14 @@
                                 <i class="fa-solid fa-star text-yellow-400"></i>
                             </div>
                             <div>
-                                <small>(1,273)</small>
+                                <small>(1,237)</small>
                             </div>
                         </div>
                         <div>
-                            <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                            <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="">skechers women <sup>,</sup>s go joy walking shoe sneaker</a>
                         </div>
                         <div class="price flex items-center">
-                            <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
+                            <h1 class="text-red-400 text-2xl font-bold">$45.95</h1>
                             <small class="line-through mx-5">676.60</small>
                         </div>
                      </div>
@@ -1133,7 +1467,7 @@
                     <div class="product gap-5  flex flex-col ">
                         <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
             
-                            <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                            <img src="./assets/products/shoe3.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
                             <div class="top-9 right-0 w-7 h-7  absolute ">
             
                                 <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
@@ -1159,15 +1493,15 @@
                                     <i class="fa-solid fa-star text-yellow-400"></i>
                                 </div>
                                 <div>
-                                    <small>(1,273)</small>
+                                    <small>(173)</small>
                                 </div>
                             </div>
                             <div>
-                                <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                                <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="">walking shoe sneaker womens</a>
                             </div>
                             <div class="price flex items-center">
-                                <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
-                                <small class="line-through mx-5">676.60</small>
+                                <h1 class="text-red-400 text-2xl font-bold">$139.99</h1>
+                                <small class="line-through mx-5">618.98</small>
                             </div>
                          </div>
                         </div>
@@ -1175,7 +1509,7 @@
                         <div class="product gap-5  flex flex-col ">
                             <div class="top mt-2 relative  w-[250px] h-[250px]  group overflow-hidden">
                 
-                                <img src="./assets/products/apparel1.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
+                                <img src="./assets/products/shoe4.jpg" alt="" class=" w-full h-full bg-cover bg-center transition hover:scale-110 duration-500">
                                 <div class="top-9 right-0 w-7 h-7  absolute ">
                 
                                     <i class="fa-regular fa-eye bg-slate-100/60 rounded-full p-2 text-black transform  group-hover:translate-x-[-6px] group-hover:opacity-100 translate-x-[30px] transition-all duration-300 opacity-0 "></i>
@@ -1188,7 +1522,7 @@
                                     <i class="fa-regular fa-heart bg-slate-100/60 rounded-full p-2 "></i>
                                    
                                 </div>
-                                <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">25%</h1>
+                                <h1 class=" absolute bottom-0 right-0 text-[9px] bg-gray-600/50 rounded-full w-7 h-7 leading-7 text-center text-white text-[10px] ">24%</h1>
                             </div>
                             <div class="right w-[200px]">
                               
@@ -1201,20 +1535,184 @@
                                         <i class="fa-solid fa-star text-yellow-400"></i>
                                     </div>
                                     <div>
-                                        <small>(1,273)</small>
+                                        <small>(25)</small>
                                     </div>
                                 </div>
                                 <div>
-                                    <a class="font-bold hover:text-blue-800 text-line capitalize" href="">under armor men s tech</a>
+                                    <a class="font-bold hover:text-blue-800  hover:underline capitalize" href="">womens summer tosca shoe</a>
                                 </div>
                                 <div class="price flex items-center">
-                                    <h1 class="text-red-400 text-2xl font-bold">$560.60</h1>
-                                    <small class="line-through mx-5">676.60</small>
+                                    <h1 class="text-red-400 text-2xl font-bold">$104.90</h1>
+                                    <small class="line-through mx-5">618.90</small>
                                 </div>
                              </div>
                              </div>
                             </div>
-        </div>
+                           <div class="product-info flex-col lg:flex lg:flex-row gap-5 w-full  ">
+                            <div class="  lg:w-1/2 border my-5 before:content('') relative before:top-[10%] before:left-[5%] before:w-[50%] before:h-[30%] before:bg-white before:absolute before:filter before:blur-3xl before:opacity-90">
+                                <img src="./assets/banner/banner1.jpg" alt="" class="w-full h-full   ">
+                                <div class="item   items-center absolute left-16 top-[30%]">
+                                    <button class="bg-black text-white px-3  py-1 rounded-[0.5em] text-[10px] font-bold my-2">shoes fashion</button>
+                                    <h1 class="text-gray-400 text-4xl my-2">brutal sale !</h1>
+                                    <h1 class="capitalize font-bold text-3xl my-2 text-gray-400">get the deal in here</h1>
+                                    <h1 class="uppercase font-bold text-3xl my-2">living room chair</h1>
+                                    <button class="bg-red-400 text-white p-2 rounded-full">shop new</button>
+                                </div>
+                                
+                               </div>
+                               <div class=" lg:w-1/2  my-5 before:content('') relative before:top-[10%] before:left-[5%] before:w-[50%] before:h-[30%] before:bg-white before:absolute before:filter before:blur-3xl before:opacity-90">
+                                <img src="./assets/banner/banner2.jpg" alt="" class="w-full h-full   ">
+                                <div class="item   items-center absolute left-16 top-[30%]">
+                                    <button class="bg-black text-white px-3  py-1 rounded-[0.5em] text-[10px] font-bold my-2">shoes fashion</button>
+                                    <h1 class="text-gray-400 text-4xl my-2">brutal sale !</h1>
+                                    <h1 class="capitalize font-bold text-3xl my-2 text-gray-400">discount everyday</h1>
+                                    <h1 class="uppercase font-bold text-3xl my-2">office outfit</h1>
+                                    <button class="bg-red-400 text-white p-2 rounded-full">shop new</button>
+                                </div>
+                                
+                               </div>
+                           </div>
+                           <div class="product-desc flex flex-wrap gap-5 w-full">
+                            <div class="beauty  flex items-center justify-center border lg:w-[33%] w-full py-10">
+                                <div class="left   h-[300px]">
+                                    <img src="./assets/banner/procat1.jpg" alt="" class="w-full h-full">
+                                </div>
+                                <div class="right  h-[300px] flex flex-col justify-between">
+                                    <h1 class="captitalize font-bold">beauty</h1>
+                                    <small class="capitalize text-gray-400">makeup</small>
+                                    <small class="capitalize text-gray-400">skin care</small>
+                                    <small class="capitalize text-gray-400">hair care</small>
+                                    <small class="capitalize text-gray-400">fragnace</small>
+                                    <small class="capitalize text-gray-400">foot & hand care</small>
+
+                                    <div class="capitalize flex items-center">
+                                        <h1>view all</h1>
+                                        <i class="scroll-1 fa-solid fa-chevron-right group mx-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gatdets flex items-center justify-center border lg:w-[32%] w-full py-10">
+                                <div class="left  h-[300px]">
+                                    <img src="./assets/banner/procat2.jpg" alt="" class="w-full h-full">
+                                </div>
+                                <div class="right   h-[300px] flex flex-col justify-between">
+                                    <h1 class="captitalize font-bold">gatdets</h1>
+                                    <small class="capitalize text-gray-400">camera</small>
+                                    <small class="capitalize text-gray-400">cell phones</small>
+                                    <small class="capitalize text-gray-400">computers</small>
+                                    <small class="capitalize text-gray-400">gps & navigation</small>
+                                    <small class="capitalize text-gray-400">headphones</small>
+
+                                    <div class="capitalize flex items-center">
+                                        <h1>view all</h1>
+                                        <i class="scroll-1 fa-solid fa-chevron-right group mx-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="home flex items-center justify-center border lg:w-[32%] w-full py-10">
+                                <div class="left   h-[300px]">
+                                    <img src="./assets/banner/procat3.jpg" alt="" class="w-full h-full">
+                                </div>
+                                <div class="right   h-[300px] flex flex-col justify-between">
+                                    <h1 class="captitalize font-bold">home decor</h1>
+                                    <small class="capitalize text-gray-400">kitchen</small>
+                                    <small class="capitalize text-gray-400">dining room</small>
+                                    <small class="capitalize text-gray-400">pantry </small>
+                                    <small class="capitalize text-gray-400">great room</small>
+                                    <small class="capitalize text-gray-400">breakfast nook</small>
+
+                                    <div class="capitalize flex items-center">
+                                        <h1>view all</h1>
+                                        <i class="scroll-1 fa-solid fa-chevron-right group mx-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="footer">
+                    <div class="footer-top  lg:flex lg:flex-row lg:justify-between  flex flex-col gap-5 justify-center  items-center py-[40px] w-full bg-gray-900 px-[10%] relative top-10 ">
+                        <div class="left text-white mr-20">
+                            <h1 class="text-2xl font-bold">join our newsletter</h1>
+                            <small>get email updates about our latest shop and <small class="text-red-400">special offers.</small></small>
+                        </div>
+                        <div class="right">
+                            <div class="header-bottom-right bg-white  h-[50px] flex  relative rounded-lg ">
+                                <div class=" left-5 h-[50px]">
+                                    <i class="fa-solid fa-magnifying-glass ml-5"></i>
+                                    <input type="text" placeholder="search for Products " class="border-none bg-transparent h-full  mr-5 outline-none px-[10px] pr-[150px]">
+                                    
+                                </div>
+                                <button class="bg-red-400 absolute right-0 text-white h-full leading-[50px] px-5 rounded-tr-lg rounded-br-lg hover:bg-black">search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-middle">
+                        <div class="footer-top  lg:flex lg:flex-row lg:justify-between lg:py-[5%] pb-[5%] pt-[10%] flex flex-col gap-5 justify-end  items-start  w-full bg-slate-200 px-[10%]  ">
+                            <div class="help flex flex-col mb-10">
+                                <h1 class="font-bold capitalize text-xl">help & contact</h1>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">your account</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">your orders</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">shopping rates</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">returns</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">assitant</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">help</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">contact us</small>
+                            </div>
+
+                            <div class="product categories flex flex-col items-between">
+                                <h1 class="font-bold capitalize text-xl">product & categories</h1>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">beauty</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">electronic</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">women fashion</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">men fashion</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">girl fashion</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">boy fashion</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">health & household</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">home & kitchen</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">pet supplies</small>
+                                <small class="capitalize text-gray-400 my-2 hover:underline">sports</small>
+                            </div> 
+
+                            <div class="payment flex flex-col items-between">
+                                <h1 class="font-bold capitalize text-xl">payment info</h1>
+                                <small class="capitalize text-gray-400 hover:underline my-2">bussines card</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">shop with points</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">reload your balance</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">paypal</small>
+                            </div>
+                            <div class="about us flex flex-col items-between">
+                                <h1 class="font-bold capitalize text-xl">about us</h1>
+                                <small class="capitalize text-gray-400 hover:underline my-2">company info</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">news</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">investors</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">careers</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">policies</small>
+                                <small class="capitalize text-gray-400 hover:underline my-2">customer reviews</small>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="footer-bottom py-60 bg-gray-100 flex flex-col justify-center items-center">
+                       <div class="top ">
+                        <h1 class="mx-2 font-bold text-3xl relative ">.store
+                            <div class="w-7 h-7 bg-purple-300 rounded-full absolute top-[-5px] left-[-20px] shadow shadow-[60px 35px 60px 15px ] shadow-slate-500"></div>
+                        </h1>
+                       </div>
+                       <div class="middle mt-10">
+                        <i class="fa-brands fa-twitter p-3 bg-gray-300/50 rounded-full mx-2 cursor-pointer"></i>
+                        <i class="fa-brands fa-facebook-f  p-3 px-4 bg-gray-300/50 rounded-full mx-2 cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram  p-3 bg-gray-300/50 rounded-full mx-2 cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin-in  p-3 bg-gray-300/50 rounded-full mx-2 cursor-pointer"></i>
+                        <i class="fa-brands fa-youtube  p-3 bg-gray-300/50 rounded-full mx-2 cursor-pointer"></i>
+                    </div>
+                    <small class="capitalize mt-10">copyright 2022 @.store all right reserved</small>
+                    </div>
+                </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="index.js"></script>
   </body>

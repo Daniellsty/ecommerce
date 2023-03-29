@@ -17,6 +17,8 @@
            justify-content: center;
         }
 
+      
+
     }
 
     @media (min-width:768px){
@@ -32,6 +34,28 @@
 
             padding: 0 5%;
        }
+       header{
+        display: none;
+        }
+        .header-bottom{
+            display: none
+        }
+
+        .main-top-left{
+            display: none;
+        }
+
+        .main-top-right{
+            width: 100%;
+        }
+
+        .mobile-header{
+            display: flex;
+        }
+
+        .menu-all-items{
+            display: block;
+        }
     }
 
     @media(max-width:1124px){
@@ -45,5 +69,10 @@
         }
 
 
+    }
+
+     .show{
+
+        display: none;
     }
 }
