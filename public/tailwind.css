@@ -8,7 +8,7 @@
 
     .slide{
 
-        width: calc(100% - (300px + 1em));
+        width: calc(100% - (300px + 2em));
         margin-left: auto;
     }
 
@@ -46,7 +46,7 @@
         }
 
         .main-top-right{
-            width: 100%;
+          width: 100%;
         }
 
         .mobile-header{
